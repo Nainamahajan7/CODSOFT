@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)http://127.0.0.1:5500/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treks and Trails</title>
+    </head><body><img src="./level1 task1_files/download.jpeg" alt="Description of the image" style="width:10%; border-radius:5px; margin-top:1rem;">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        header {
+            background: linear-gradient(to right, #495231, #7bfe8c);
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+        .section {
+            padding: 2rem 0;
+            border-bottom: 1px solid #ddd;
+        }
+        .section h2 {
+            color: #5f7aff;
+        }
+        .columns {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .column {
+            flex: 1;
+            margin: 0 1rem;
+            padding: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+        }
+        .button {
+            background-color: #195118;
+            color: white;
+            padding: 0.5rem 1rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+        }
+    </style>
+
+
+    <header>
+        <h1>Treks and Trails</h1>
+    </header>
+    <div class="container">
+        <div class="section" id="about">
+            <h2>About</h2>
+            <p>Welcome to Treks and Trails! Join us in exploring the most beautiful trekking destinations.</p>
+        </div>
+        <div class="section" id="services">
+            <h2>Services</h2>
+            <div class="columns">
+                <div class="column">
+                    <h3>Guided Treks</h3>
+                    <p>Experience the best guided treks with our expert trek leaders.</p>
+                </div>
+                <div class="column">
+                    <h3>Equipment Rental</h3>
+                    <p>Get all the necessary trekking equipment on rent from us.</p>
+                </div>
+                <div class="column">
+                    <h3>Custom Treks</h3>
+                    <p>Plan a custom trek tailored to your preferences.</p>
+                </div>
+            </div>
+        </div>
+        <div class="section" id="upcoming-events">
+            <h2>Upcoming Events</h2>
+            <p>Stay tuned for our exciting upcoming treks and events!</p>
+        </div>
+        <div class="section" id="trek-instructions">
+            <h2>Trek Instructions</h2>
+            <p>Ensure a safe and enjoyable trek by following our guidelines and instructions.</p>
+        </div>
+        <div class="section" id="contact">
+            <h2>Contact us</h2>
+            <p>Get in touch with us for more information or to book a trek.</p>
+            <a href="https://www.treksandtrails.org/" class="button">Visit Our Website</a>
+        </div>
+    </div>
+    <footer>
+        <p>© 2024 Treks and Trails. All rights reserved.</p>
+    </footer>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+</body></html>
